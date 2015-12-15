@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <title>My Page</title>
+    <title>Dgenius</title>
     <!-- Include meta tag to ensure proper rendering and touch zooming -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Include the jQuery library -->
@@ -17,18 +17,31 @@
 <body>
 
 <!-- Start of first page -->
-<div data-role="page" id="foo">
+<div data-role="page" id="home">
 
 	<div data-role="header">
-		<h1>Foo</h1>
+		<h1>Home</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-		<p>I'm first in the source order so I'm shown as the page.</p>
-		<p>View internal page called <a href="#bar">bar</a></p>
-		
+		<h1> Dgenius </h1>
+		<h2>We are end-to-end service providers</h2>
+        <p>We take pride in offering an all-exclusive range of digital analytics services. This means our clients can rely on a single service provider to maximize impact on their digital analytics investments. No more inefficiencies in getting the results you want by handling bits-and-pieces vendors.</p>
+		<h2>We are versatile </h2>
+        <p>Our experience has shown us that successful data solutions that create lasting impact for our clients requires knowledge that is both deep and wide. Data science is our niche but we are equally adept in closely related fields such as web development and online marketing. This helps us in our quest to get the most meaning out of your data.</p>
+		<h3>We are partners </h3>
+        <p>We ensure our clients are always happy by creating solutions that truly “wow.” For us exceeding client expectations is our number one priority. To achieve this, we treat clients as partners and build work streams that are super collaborative.</p>
+		<h3>We are obsessed with data</h3>
+        <p>We believe no business can afford to make decisions that aren’t backed by data-driven insights. Our love for data analytics and its power drives us to consistently raise the bar in our work. In doing so, we inspire our clients and ourselves.</p>
+		<h3>We are driven to deliver </h3>
+        <p>Our hunger to help our clients revolutionize their businesses by leveraging their data is our biggest asset. We strive to be game-changers in our industry and in doing so we help our clients be game-changes in their industry. </p>
+		<a href="#process" data-role="button" data-icon="star">Our Process</a>
+		<a href="#contact" data-role="button" data-icon="star">Contact Us</a>
+	
+	<!--Buttons-->
 		<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Anchor</a>
 		<button class="ui-btn ui-icon-delete ui-btn-icon-left">Button</button>
+		
 	<form>
     <label for="slider-1">Slider:</label>
     <input type="range" name="slider-1" id="slider-1" data-track-theme="b" data-theme="b" min="0" max="100" value="50">
@@ -73,10 +86,10 @@
 </div><!-- /page -->
 
 <!-- Start of second page -->
-<div data-role="page" id="bar">
+<div data-role="page" id="process">
 
 	<div data-role="header">
-		<h1>Bar</h1>
+		<h1>Our Process</h1>
 		<div data-role="navbar">
     <ul>
         <li><a href="#" class="ui-btn-active">One</a></li>
@@ -87,9 +100,23 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-		<p><a href="#foo">Back to foo</a></p>
-		<ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
+		
+    <h3> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs</h3>
+    <p>Click on each heading below to reveal details<!-- <button class="btn btn-default" id="closeall"> Close all</button></p> -->
+	 <h2>Discover | Becoming partners with our clients</h2>
+     <p>We believe every client deserves a customized approach in solving challenges around data analytics because every business works in a different context, with varying requirements. This is why when we start working with clients, we take time to deeply understand their needs, objectives, and outcomes. More importantly we listen to clients until we fully discover and grasp their strategic intent. Developing a close collaborative partnership with clients allows us to align our solutions to your ambitions. The result is a methodology that makes your success our focus.</p>	
+	<h2>Cultivate | Developing a pathway to overcome challenges</h2>
+    <p>We cultivate everything we’ve learnt about your needs by analyzing the strategic intent and uncovering the challenges it reveals. At this stage, we question everything - our client’s thinking and our own assumptions. We exhaustively experiment with the data, analytical methods, and visual designs. Experiments lead to precise insights. From here, insights serve as the backbone of developing a strategic strategy that becomes the pathway towards meeting your objectives. We deliver a blueprint and demonstrate how the data strategy we propose will create organizational value, impact, and performance.</p>	
+	<h2>Construct | Building with precision</h2>
+    <p>When all stakeholders have aligned themselves to the blueprint, we incorporate feedback from the process and begin constructing prototypes. Our interdisciplinary teams are scalable for projects of all shapes and sizes allowing for efficient collaboration with the client and each other. We aggressively conduct tests against hypothesis to ensure we never lose sight of the strategic intent uncovered during the discovery process. The result is fulfilling client’s needs successfully while delivering the blueprint with precision.</p>
+	<h2>Deploy | Driving change with full support</h2>
+    <p >Once we deliver one the blueprint, we don’t leave clients at the deep end. Implementing on data strategy insights and improving performance consistently takes intentionality without which bringing about change would be impossible. This is why we come alongside our clients and provide a deployment plan that leads to sustainable performance improvements. Our support includes training, change management strategy, establishing new processes and much more. Everything we do is tailored to each clients unique deployment needs.</p>
+		
+		<p><a href="#home" data-role="button" data-icon="home">Home</a></p>
+		<p><a href="#contact"data-role="button" data-icon="gear">Contact Us</a></p>
+	<!--List view widget-->
+		
+	<ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
     <li><a href="#">Apple</a></li>
     <li><a href="#">Banana</a></li>
     <li><a href="#">Cherry</a></li>
@@ -101,6 +128,7 @@
 
 	<div data-role="footer">
 		<h4>Page Footer</h4>
+	<!--navbar widget-->	
 		<div data-role="navbar">
             <ul>
                 <li><a href="#" data-icon="grid">Summary</a></li>
@@ -110,5 +138,115 @@
         </div><!-- /navbar -->
 	</div><!-- /footer -->
 </div><!-- /page -->
+
+<!-- Start of third page: #popup -->
+<div data-role="page" data-dialog="true" id="contact">
+  <div data-role="header">
+    <h1>Get in Touch</h1>
+  </div> <!-- /header -->
+
+  <div data-role="main" class="ui-content">
+    <p>
+	Fill in the form below, and we'll get back to you within 24 hours.</p>
+    <a href="#home">Go to Home</a>
+	<form id="contact-form" action="/" method="post">
+						<p>
+							Fill in the form below, and we'll get back to you within 24 hours.
+						</p>
+						<div>
+							<label>
+								<span>
+									Name: (required)
+								</span>
+								<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+							</label>
+						</div>
+						<div>
+							<label>
+								<span>
+									Email: (required)
+								</span>
+								<input placeholder="Please enter your email address" type="email" tabindex="2" required>
+							</label>
+						</div>
+						<div>
+							<label>
+								<span>
+									Telephone: (required)
+								</span>
+								<input placeholder="Please enter your number" type="tel" tabindex="3" required>
+							</label>
+						</div>
+						<div>
+							<label>
+								<span>
+									Do you have a Website?
+								</span>
+								<input id="havewebsite" type="checkbox" title="Have a website" tabindex="4"     >
+							</label>
+						</div>
+						<div id="website" style="display: none;">
+							<label>
+								<span>
+									Website URL:  
+								</span>
+								<input placeholder="Begin with http://" type="url" tabindex="5"  >
+							</label>
+						</div>
+						<div class="ui-field-contain">
+						<span>
+						<label for="select-native-1">Country:</label>
+						</span>
+						<select name="select-native-1" id="select-native-1" data-iconpos="left">
+						<option value="1">London</option>
+						<option value="2">NewYork</option>
+						<option value="3">Australia</option>
+						<option value="4">Pakistan</option>
+						<option value="5">United States</option>
+						<option value="6">United Kingdom</option>
+						<option value="7">Los Angeles</option>
+						</select>
+						</div>
+						<fieldset data-role="controlgroup" data-type="horizontal">
+						<legend>Do you know Dgenius?</legend>
+						<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
+						<label for="radio-choice-v-2a">yes</label>
+						<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+						<label for="radio-choice-v-2b">No</label>
+						<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2c" value="other">
+						<label for="radio-choice-v-2c">To some extend</label>
+						</fieldset>
+						<div>
+							<label>
+								<span>
+									Message: (required)
+								</span>
+								<textarea placeholder="Include all the details you can" tabindex="6" required>
+								</textarea>
+							</label>
+						</div>
+						<div class="ui-field-contain">
+						<fieldset data-role="controlgroup" data-mini="true">
+						<label for="checkbox-5">I agree</label>
+						<input type="checkbox" name="checkbox-5" id="checkbox-5">
+						</fieldset>
+						</div>
+						<div class="frmbuttons">
+							<button  disabled="disabled"  tabindex="8" name="submit" type="submit" id="contact-submit">
+								Send Email
+							</button>
+							<button name="cancel" type="reset" id="clear-form">
+								Cancel
+							</button>
+						</div>
+					</form>
+  </div><!-- /content -->
+
+  <div data-role="footer">
+    <h1>Footer Text In Dialog</h1>
+  </div><!-- /footer -->
+</div> <!-- /page popup -->
+
+
 </body>
 </html>
