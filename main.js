@@ -21,3 +21,6 @@ $(document).on("pageinit","#process",function(){
     $("span").text("Swipe detected!");
   });                       
 });
+
+$( "#draggable" ).draggable();
+$( "#resizable" ).resizable();

@@ -22,7 +22,9 @@
 <div data-role="page" id="home">
 
 	<div data-role="header">
-		<h1  id="example">Home</h1>
+		<h1>Home</h1>
+		<a href="#process" data-role="button" data-icon="star">Our Process</a>
+		<a href="#contact" data-role="button" data-icon="star">Contact Us</a>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
@@ -37,24 +39,12 @@
         <p>We believe no business can afford to make decisions that aren’t backed by data-driven insights. Our love for data analytics and its power drives us to consistently raise the bar in our work. In doing so, we inspire our clients and ourselves.</p>
 		<h3>We are driven to deliver </h3>
         <p>Our hunger to help our clients revolutionize their businesses by leveraging their data is our biggest asset. We strive to be game-changers in our industry and in doing so we help our clients be game-changes in their industry. </p>
-		<a href="#process" data-role="button" data-icon="star">Our Process</a>
-		<a href="#contact" data-role="button" data-icon="star">Contact Us</a>
-	
-	<!--Buttons-->
-		<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Anchor</a>
-		<button class="ui-btn ui-icon-delete ui-btn-icon-left">Button</button>
 		
 	<form>
     <label for="slider-1">Slider:</label>
     <input type="range" name="slider-1" id="slider-1" data-track-theme="b" data-theme="b" min="0" max="100" value="50">
 	</form>
-	<div class="ui-grid-b my-breakpoint">
-      <div class="ui-block-a"><div class="ui-body ui-body-d"><h2 > What We Do? </h2>
-			<p>Dgenius delivers data-driven strategy that boosts business performance consistently. We make data-driven decisions your biggest edge.</p></div></div>
-      <div class="ui-block-b"><div class="ui-body ui-body-d"><h2> Our Process</h2><p> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs. </p></div></div>
-      <div class="ui-block-c"><div class="ui-body ui-body-d"><h2>Why Us?</h2><p> We are highly: Proficient - Collaborative - Driven.
-			</p></div></div>
-    </div>
+
 <!--PopUp login window-->
 	<a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">Sign in</a>
 <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
@@ -86,14 +76,24 @@
 
 	<div data-role="footer">
 		<h4>Page Footer</h4>
+			<div class="ui-grid-b my-breakpoint">
+      <div class="ui-block-a"><div class="ui-body ui-body-d"><h2 > What We Do? </h2>
+			<p>Dgenius delivers data-driven strategy that boosts business performance consistently. We make data-driven decisions your biggest edge.</p></div></div>
+      <div class="ui-block-b"><div class="ui-body ui-body-d"><h2> Our Process</h2><p> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs. </p></div></div>
+      <div class="ui-block-c"><div class="ui-body ui-body-d"><h2>Why Us?</h2><p> We are highly: Proficient - Collaborative - Driven.
+			</p></div></div>
+    </div>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
 <!-- Start of second page -->
 <div data-role="page" id="process">
 
-	<div data-role="header">
-		<h1>Our Process</h1>
+	<div data-role="header">				
+		<p><a href="#home" data-role="button" data-icon="home">Home</a><h1>Our Process</h1></p> <br> <p><a href="#contact"data-role="button" data-icon="gear">Contact Us</a></p>
+
+	</div><!-- /header -->
+		<!--NavBar Widget-->	
 		<div data-role="navbar">
     <ul>
         <li><a href="#" class="ui-btn-active">One</a></li>
@@ -101,7 +101,6 @@
         <li><a href="#">Three</a></li>
     </ul>
 </div><!-- /navbar -->
-	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
 	<span>Hello! </span>
@@ -114,9 +113,7 @@
     <p>When all stakeholders have aligned themselves to the blueprint, we incorporate feedback from the process and begin constructing prototypes. Our interdisciplinary teams are scalable for projects of all shapes and sizes allowing for efficient collaboration with the client and each other. We aggressively conduct tests against hypothesis to ensure we never lose sight of the strategic intent uncovered during the discovery process. The result is fulfilling client’s needs successfully while delivering the blueprint with precision.</p>
 	<h2>Deploy | Driving change with full support</h2>
     <p >Once we deliver one the blueprint, we don’t leave clients at the deep end. Implementing on data strategy insights and improving performance consistently takes intentionality without which bringing about change would be impossible. This is why we come alongside our clients and provide a deployment plan that leads to sustainable performance improvements. Our support includes training, change management strategy, establishing new processes and much more. Everything we do is tailored to each clients unique deployment needs.</p>
-		
-		<p><a href="#home" data-role="button" data-icon="home">Home</a></p>
-		<p><a href="#contact"data-role="button" data-icon="gear">Contact Us</a></p>
+
 	<!--List view widget-->
 		
 	<ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
