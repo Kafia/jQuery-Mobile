@@ -11,7 +11,7 @@ $(document).on("pageinit","#home",function(){
   });                       
 });
 /*jQuery Mobile Vmouseover Event */
-$( document ).on( "vmouseover", "span", function() {
+$( document ).on( "vmouseover", "h4", function() {
   $( this ).append( "<span style='color:#108040;'> Dgenius...</span>" );
 });
 
