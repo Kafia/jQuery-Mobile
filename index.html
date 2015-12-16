@@ -109,14 +109,31 @@
 	</div><!-- /header -->
 	
 	<div role="main" class="ui-content">
-	<h4>Hello! </h4>
+	<h4>Hello Dgenius !</h4>
     <h5> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs</h5>
-	 <h2>Discover | Becoming partners with our clients</h2>
-     <p id="para2">We believe every client deserves a customized approach in solving challenges around data analytics because every business works in a different context, with varying requirements. This is why when we start working with clients, we take time to deeply understand their needs, objectives, and outcomes. More importantly we listen to clients until we fully discover and grasp their strategic intent. Developing a close collaborative partnership with clients allows us to align our solutions to your ambitions. The result is a methodology that makes your success our focus.</p>	
-	<h2>Cultivate | Developing a pathway to overcome challenges</h2>
+	 <div class="crwd">
+    <!-- Lead story block -->
+    <div class="ui-block-a">
+        <div class="ui-body ui-body-d">
+            <h2>Discover | Becoming partners with our clients</h2>
+			<p id="para2">We believe every client deserves a customized approach in solving challenges around data analytics because every business works in a different context, with varying requirements. This is why when we start working with clients, we take time to deeply understand their needs, objectives, and outcomes. More importantly we listen to clients until we fully discover and grasp their strategic intent. Developing a close collaborative partnership with clients allows us to align our solutions to your ambitions. The result is a methodology that makes your success our focus.</p>	</div>
+    </div>
+    <!-- secondary story block #1 -->
+    <div class="ui-block-b">
+        <div class="ui-body ui-body-d">
+            <h2>Cultivate | Developing a pathway to overcome challenges</h2>
     <p id="para2">We cultivate everything we’ve learnt about your needs by analyzing the strategic intent and uncovering the challenges it reveals. At this stage, we question everything - our client’s thinking and our own assumptions. We exhaustively experiment with the data, analytical methods, and visual designs. Experiments lead to precise insights. From here, insights serve as the backbone of developing a strategic strategy that becomes the pathway towards meeting your objectives. We deliver a blueprint and demonstrate how the data strategy we propose will create organizational value, impact, and performance.</p>	
-	<h2>Construct | Building with precision</h2>
+	</div>
+    </div>
+    <!-- secondary story block #2 -->
+    <div class="ui-block-c">
+        <div class="ui-body ui-body-d">
+            <h2>Construct | Building with precision</h2>
     <p id="para2">When all stakeholders have aligned themselves to the blueprint, we incorporate feedback from the process and begin constructing prototypes. Our interdisciplinary teams are scalable for projects of all shapes and sizes allowing for efficient collaboration with the client and each other. We aggressively conduct tests against hypothesis to ensure we never lose sight of the strategic intent uncovered during the discovery process. The result is fulfilling client’s needs successfully while delivering the blueprint with precision.</p>
+	</div>
+    </div>
+</div><!-- /crwd-example -->
+
 	<h2>Deploy | Driving change with full support</h2>
     <p id="para2">Once we deliver one the blueprint, we don’t leave clients at the deep end. Implementing on data strategy insights and improving performance consistently takes intentionality without which bringing about change would be impossible. This is why we come alongside our clients and provide a deployment plan that leads to sustainable performance improvements. Our support includes training, change management strategy, establishing new processes and much more. Everything we do is tailored to each clients unique deployment needs.</p>
 
@@ -132,20 +149,12 @@
 </ul>
 	<p>Swipe this text or image below.</p>
     <p><img src="jquery.mobile-1.4.5/images/image.jpg" alt="image" style="width: 360px; height: 220px;"/></p>
-    <p><span id="swipe" style="color:red"></span></p>
+ 
 
 
 	</div><!-- /content -->
 <div data-role="footer">
-		<h3>Page Footer</h3>
-		<!--navbar widget-->	
-		<div data-role="navbar">
-            <ul>
-                <li><a href="#" data-icon="grid">Summary</a></li>
-                <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
-                <li><a href="#" data-icon="gear">Setup</a></li>
-            </ul>
-        </div><!-- /navbar -->
+		<h3><img src="jquery.mobile-1.4.5/images/logo.png" alt="logo" style="background:transparent;"/></h3>
 	<div class="ui-grid-b ">
       <div class="ui-block-a"><div class="ui-body ui-body-d"><h2 > What We Do? </h2>
 			<p>Dgenius delivers data-driven strategy that boosts business performance consistently. We make data-driven decisions your biggest edge.</p></div></div>
@@ -157,7 +166,7 @@
 </div><!-- /page -->
 
 <!-- Start of third page: #popup -->
-<div data-role="page" data-dialog="true" id="contact">
+<div data-role="page" id="contact">
 <div data-role="header">
 
     <h1>Get in Touch</h1>
@@ -173,7 +182,14 @@
 		
 	</div><!-- /header -->
   <div data-role="main" class="ui-content">
-	<form id="contact-form" action="/" method="post">
+  <h2> What We Do? </h2>
+  <p>Dgenius delivers data-driven strategy that boosts business performance consistently. We make data-driven decisions your biggest edge. We work with clients to understand their vision and define their objectives. How does leadership want to drive the organization forward? What are their definitions of success? Then we provide intelligence that will guide your organization in an ever-changing competitive environment.</p>
+  
+<a href="#contact-form" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">Enquiry Form</a>
+<div data-role="popup" id="contact-form" data-theme="a" class="ui-corner-all">
+    <form id="contact-form" action="/" method="post">
+						<div style="padding:10px 20px;">
+						    <h1>Get in Touch</h1>
 						<p>
 							Fill in the form below, and we'll get back to you within 24 hours.
 						</p>
@@ -265,12 +281,21 @@
 								Cancel
 							</button>
 						</div>
+						</div>
 					</form>
+</div>
+  <p>we welcome the opportunity to chat about how we can help you get more from your next project. Whether you want a free, no obligation consultation or just a quick chat please give us a call, leave a message Or complete the form above and we’ll get right back to you.</p>
   </div><!-- /content -->
-
-  <div data-role="footer">
-    <h1>Footer Text In Dialog</h1>
-  </div><!-- /footer -->
+	<div data-role="footer">
+		<h3>Page Footer</h3>
+			<div class="ui-grid-b ">
+      <div class="ui-block-a"><div class="ui-body ui-body-d"><h2 > What We Do? </h2>
+			<p>Dgenius delivers data-driven strategy that boosts business performance consistently. We make data-driven decisions your biggest edge.</p></div></div>
+      <div class="ui-block-b"><div class="ui-body ui-body-d"><h2> Our Process</h2><p> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs. </p></div></div>
+      <div class="ui-block-c"><div class="ui-body ui-body-d"><h2>Why Us?</h2><p> We are highly: Proficient - Collaborative - Driven.
+			</p></div></div>
+    </div>
+	</div><!-- /footer -->
 </div> <!-- /page popup -->
 
 

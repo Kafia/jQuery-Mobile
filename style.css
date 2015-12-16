@@ -24,4 +24,145 @@ a:link { color:purple; }
 	/* You can also tweak any other styles in a breakpoint */
 	H1 { color: blue; font-size:1.2em; }
 }
+.demoHeaders {
+		margin-top: 2em;
+	}
+#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+#icons {
+		margin: 0;
+		padding: 0;
+	}
+#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	
+ #draggable {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+	text-align: center;
+  }
+  
+ #resizable {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+}	
 
+  #toggle {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+/* Custom Responsive design */
+/* Basic styles */
+.crwd .ui-body {
+    text-align: left;
+    border-color: #ddd;
+}
+.crwd p {
+    color: #333;
+    line-height: 140%
+}
+/* Stack all blocks to start */
+.crwd .ui-block-a,
+.crwd .ui-block-b,
+.crwd .ui-block-c {
+    width: 100%;
+    float: none;
+}
+/* Collapsing borders */
+.crwd > div + div .ui-body {
+    border-top-width: 0;
+}
+/* 1st breakpoint - Float B and C, leave A full width on top */
+@media all and (min-width: 42em) {
+    .crwd {
+        overflow: hidden; /* Use this or a "clearfix" to give the container height */
+    }
+    .crwd .ui-body {
+       min-height: 14em;
+    }
+    .crwd .ui-block-b,
+    .crwd .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .crwd .ui-block-b p,
+    .crwd .ui-block-c p {
+      font-size: .8em;
+    }
+    .crwd > div + div .ui-body {
+        border-top-width: 1px;
+    }
+    .crwd > div:first-child .ui-body {
+        border-bottom-width: 0;
+    }
+    .crwd > div:last-child .ui-body {
+        border-left-width: 0;
+    }
+}
+/* 2nd breakpoint - Float all, 50/25/25 */
+@media all and (min-width: 55em) {
+    .crwd .ui-body {
+       min-height: 18em;
+    }
+    .crwd .ui-block-a,
+    .crwd .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .crwd .ui-block-b,
+    .crwd .ui-block-c {
+      float: left;
+      width: 24.925%;
+    }
+    .crwd > div:first-child .ui-body {
+        border-bottom-width: 1px;
+    }
+    .crwd > div + div .ui-body {
+        border-left-width: 0;
+    }
+}
+/* 3rd breakpoint - Bump up font size at very wide screens */
+@media all and (min-width: 75em) {
+    .crwd .ui-body {
+      font-size: 125%;
+    }
+    .crwd .ui-block-a,
+    .crwd .ui-block-c {
+      float: left;
+      width: 49.95%;
+    }
+    .crwd .ui-block-b,
+    .crwd .ui-block-c {
+      float: left;
+      width: 24.925%;
+    }
+}

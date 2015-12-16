@@ -13,13 +13,13 @@ $(document).on("pageinit","#process",function(){
 });
 /*jQuery Mobile Vmouseover Event */
 $( document ).on( "vmouseover", "h4", function() {
-  $( this ).append( "<span style='color:#108040;'> Dgenius...</span>" );
+	alert( "Hello Dgenius!" );
 });
 
 /*jQuery Mobile Swipe Event */
 $(document).on("pageinit","#process",function(){
   $("p").on("swipe",function(){
-    $("#swipe").text("Swipe detected!");
+   alert("Swipe detected!");
   });                       
 });
 /* Dragable */
