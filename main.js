@@ -12,10 +12,15 @@ $(document).on("pageinit","#process",function(){
   });                       
 });
 /*jQuery Mobile Vmouseover Event */
-$( document ).on( "vmouseover", "h4", function() {
+$(document).on("pageinit", "#process",function(){
+	$("h4").on("vmouseover",function(){
+		$("h4").text("Hello Dgenius!");
+	});
+});
+/*$( document ).on( "vmouseover", "h4", function() {
 	alert( "Hello Dgenius!" );
 });
-
+*/
 /*jQuery Mobile Swipe Event */
 $(document).on("pageinit","#process",function(){
   $("p").on("swipe",function(){
