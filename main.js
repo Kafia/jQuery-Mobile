@@ -18,7 +18,7 @@ $( document ).on( "vmouseover", "h4", function() {
 /*jQuery Mobile Swipe Event */
 $(document).on("pageinit","#process",function(){
   $("p").on("swipe",function(){
-    $("span").text("Swipe detected!");
+    $("#swipe").text("Swipe detected!");
   });                       
 });
 /* Dragable */

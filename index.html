@@ -20,14 +20,19 @@
 
 <!-- Start of first page -->
 <div data-role="page" id="home">
+<div data-role="header">
 
-	<div data-role="header">
-		<h1>Home</h1>
-		<a href="#process" data-role="button" data-icon="star">Our Process</a>
-		<a href="#contact" data-role="button" data-icon="star">Contact Us</a>
+    <h1>Welcome To Dgenius</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" >Home</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+		<li><a href="jQuery-UI.html" data-ajax="false"> jQuery UI</a></li>
+      </ul>
+    </div>
 		
 	</div><!-- /header -->
-	<p><a href="jQuery-UI.html" data-ajax="false"data-role="button" data-icon="star"> jQuery UI</a></p>
 	<div role="main" class="ui-content">
 		<h1> Dgenius </h1>
 		<h2>We are end-to-end service providers</h2>
@@ -89,20 +94,21 @@
 
 <!-- Start of second page -->
 <div data-role="page" id="process">
+<div data-role="header">
 
-	<div data-role="header">				
-		<p><a href="#home" data-role="button" data-icon="home">Home</a><h1>Our Process</h1></p> <br> <p><a href="#contact"data-role="button" data-icon="gear">Contact Us</a></p>
-
+    <h1>Welcome To Dgenius</h1>
+			<!--NavBar Widget-->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" >Home</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+		<li><a href="jQuery-UI.html" data-ajax="false"> jQuery UI</a></li>
+      </ul>
+    </div><!-- /navbar -->
+		
 	</div><!-- /header -->
-		<!--NavBar Widget-->	
-		<div data-role="navbar">
-    <ul>
-        <li><a href="#" class="ui-btn-active">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-    </ul>
-</div><!-- /navbar -->
-
+	
 	<div role="main" class="ui-content">
 	<h4>Hello! </h4>
     <h3> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs</h3>
@@ -131,10 +137,9 @@
 
 
 	</div><!-- /content -->
-
-	<div data-role="footer">
+<div data-role="footer">
 		<h3>Page Footer</h3>
-	<!--navbar widget-->	
+		<!--navbar widget-->	
 		<div data-role="navbar">
             <ul>
                 <li><a href="#" data-icon="grid">Summary</a></li>
@@ -142,17 +147,33 @@
                 <li><a href="#" data-icon="gear">Setup</a></li>
             </ul>
         </div><!-- /navbar -->
+	<div class="ui-grid-b my-breakpoint">
+      <div class="ui-block-a"><div class="ui-body ui-body-d"><h2 > What We Do? </h2>
+			<p>Dgenius delivers data-driven strategy that boosts business performance consistently. We make data-driven decisions your biggest edge.</p></div></div>
+      <div class="ui-block-b"><div class="ui-body ui-body-d"><h2> Our Process</h2><p> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs. </p></div></div>
+      <div class="ui-block-c"><div class="ui-body ui-body-d"><h2>Why Us?</h2><p> We are highly: Proficient - Collaborative - Driven.
+			</p></div></div>
+    </div>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
 <!-- Start of third page: #popup -->
 <div data-role="page" data-dialog="true" id="contact">
-  <div data-role="header">
-    <h1>Get in Touch</h1>
-  </div> <!-- /header -->
+<div data-role="header">
 
+    <h1>Get in Touch</h1>
+			<!--NavBar Widget-->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" >Home</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+		<li><a href="jQuery-UI.html" data-ajax="false"> jQuery UI</a></li>
+      </ul>
+    </div><!-- /navbar -->
+		
+	</div><!-- /header -->
   <div data-role="main" class="ui-content">
-    <a href="#home">Go to Home</a>
 	<form id="contact-form" action="/" method="post">
 						<p>
 							Fill in the form below, and we'll get back to you within 24 hours.
