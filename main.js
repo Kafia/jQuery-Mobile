@@ -12,11 +12,9 @@ $(document).on("pageinit","#process",function(){
   });                       
 });
 /*jQuery Mobile Vmouseover Event */
-$(document).on("pageinit", "#process",function(){
-	$("h4").on("vmouseover",function(){
+	$(document).on("vmouseover","h4",function(){
 		$("h4").text("Hello Dgenius!");
 	});
-});
 /*$( document ).on( "vmouseover", "h4", function() {
 	alert( "Hello Dgenius!" );
 });
@@ -24,7 +22,7 @@ $(document).on("pageinit", "#process",function(){
 /*jQuery Mobile Swipe Event */
 $(document).on("pageinit","#process",function(){
   $("p").on("swipe",function(){
-   alert("Swipe detected!");
+	alert("Swipe detected!");
   });                       
 });
 /* Dragable */
