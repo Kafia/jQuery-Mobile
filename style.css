@@ -116,7 +116,7 @@ a:link { color:purple; }
     }
     .crwd .ui-block-b p,
     .crwd .ui-block-c p {
-      font-size: .8em;
+      font-size: 1em;
     }
     .crwd > div + div .ui-body {
         border-top-width: 1px;
@@ -153,7 +153,7 @@ a:link { color:purple; }
 /* 3rd breakpoint - Bump up font size at very wide screens */
 @media all and (min-width: 75em) {
     .crwd .ui-body {
-      font-size: 125%;
+      font-size: 100%;
     }
     .crwd .ui-block-a,
     .crwd .ui-block-c {
