@@ -1,12 +1,13 @@
-/*jQuery Mobile PageInit click Event */
-$(document).on("pageinit","#process",function(){
-  $("p").on("click",function(){
+
+/*jQuery Mobile Tap Event */
+$(document).on("pageinit","#home",function(){
+  $("p#para").on("tap",function(){
     $(this).hide();
   });                       
 });
-/*jQuery Mobile Tap Event */
-$(document).on("pageinit","#home",function(){
-  $("p").on("tap",function(){
+/*jQuery Mobile PageInit click Event */
+$(document).on("pageinit","#process",function(){
+  $("p#para2").on("click",function(){
     $(this).hide();
   });                       
 });
