@@ -24,6 +24,7 @@ a:link { color:purple; }
 	/* You can also tweak any other styles in a breakpoint */
 	H1 { color: blue; font-size:1.2em; }
 }
+/* Custom CSS for jQuery UI */
 .demoHeaders {
 		margin-top: 2em;
 	}
@@ -75,11 +76,23 @@ a:link { color:purple; }
     background: #ccc;
 }	
 
-  #toggle {
+  #explode {
     width: 100px;
     height: 100px;
     background: #ccc;
   }
+ 
+  #bounce {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+/* Shake Effect */
+ .toggler { width: auto; height: auto ; }
+         #button { padding: .5em 1em; text-decoration: none; }
+         #effect { width: 240px; height: 135px; padding: 0.4em; position: relative; }
+         #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+		 
 /* Custom Responsive design */
 /* Basic styles */
 .crwd .ui-body {

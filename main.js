@@ -73,6 +73,25 @@ $( document ).click(function() {
   $( "#explode" ).toggle( "explode" );
 });
 /* Bounce Effect */
-$( document ).click(function() {
-  $( "#bounce" ).toggle( "bounce", { times: 5 }, "slow" );
+$( "#bounce" ).on("click",function() {
+	$("#bounce").toggle( "bounce", { times: 5 }, "slow" );
 });
+/* Shake Effect */
+$(function() {
+            // run the currently selected effect
+            function runEffect() {
+               // run the effect
+               $( "#effect" ).show( "shake", {times: 10,distance: 100}, 1000, callback);
+            };
+            //callback function to bring a hidden box back
+            function callback() {
+               setTimeout(function() {
+                  $( "#effect:visible" ).removeAttr( "style" ).fadeOut();
+               }, 1000 );
+            };
+            $( "#button" ).click(function() {
+               runEffect();
+               return false;
+            });
+            $( "#effect" ).hide();
+         });
