@@ -15,10 +15,7 @@ $(document).on("pageinit","#process",function(){
 	$(document).on("vmouseover","h4",function(){
 		$("h4").text("Hello Dgenius!");
 	});
-/*$( document ).on( "vmouseover", "h4", function() {
-	alert( "Hello Dgenius!" );
-});
-*/
+	
 /*jQuery Mobile Swipe Event */
 $(document).on("pageinit","#process",function(){
   $("p").on("swipe",function(){
